@@ -4,7 +4,6 @@ import { v4 as uuid } from 'uuid';
 
 export default function Todo() {
     const [task, setTask] = useState([]);
-    const taskToAdd = document.querySelector('#task');
 
     useEffect(() => {
         const savedTasks = JSON.parse(localStorage.getItem('TodoApp'));
@@ -21,6 +20,9 @@ export default function Todo() {
     }, [task]);
 
     function handleAddTask() {
+        const taskToAdd = document.querySelector('#task');
+        event.preventDefault();
+
         if (taskToAdd.value !== '') {
             setTask([...task, {
                 id: uuid(),
@@ -30,8 +32,6 @@ export default function Todo() {
             
             taskToAdd.value = '';
         }
-
-        event.preventDefault();
     }
 
     function handleCheckTask(id) {
@@ -49,9 +49,9 @@ export default function Todo() {
     return (
         <>
             <div className="todo">
-                <form action="#">
+                <form id="cu" action="#">
                     <input type="text" id="task" placeholder="Add a Task" autoComplete="off" title="Press enter to add a task"/>
-                    <button hidden onClick={() => handleAddTask()} />
+                    <button type="submit" hidden onClick={() => handleAddTask()} />
                 </form>
                 <hr />
             </div>
