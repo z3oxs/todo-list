@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+footer {
+    margin-top: 30px;
+    font: normal 12pt 'Roboto', sans-serif;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(145, 144, 144);
+    font-weight: bold;
+    transition: all ease 0.4s;
+}
+
+footer a:hover {
+    color: rgb(187, 187, 187)
+}
+
+@media (max-width: 760px) {
+    footer {
+        font-size: 14pt;
+    }
+}
