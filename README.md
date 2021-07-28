@@ -1,4 +1,4 @@
-<img src="./images/screenshot.gif" width="650">
+<img src="./images/screenshot.gif" width="800">
 
 <br><br>
 ❓ What is this?
@@ -13,8 +13,9 @@
 📌 Features:
 - Check/uncheck any task
 - Remove any task
-- Not responsive yet (Soon)
-- Auto-save (Using LocalStorage)
+- Responsive
+- Auto-save (Using localStorage)
+- Theme changer (Dark and Light)
 
 <br><br>
 🔧 Setup:

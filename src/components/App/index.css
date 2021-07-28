@@ -1,11 +1,13 @@
 body {
-    background-color: rgb(14, 14, 14);
+    transition: all ease 0.7s;
 }
 
 .App {
-    margin-top: 80px;
-    width: 100vh;
-    border-radius: 8px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 760px) {
+    .App {
+        width: 100vh;
+    }
 }
