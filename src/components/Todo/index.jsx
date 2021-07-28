@@ -49,7 +49,7 @@ export default function Todo() {
     return (
         <>
             <div className="todo">
-                <form id="cu" action="#">
+                <form id="task" action="#">
                     <input type="text" id="task" placeholder="Add a Task" autoComplete="off" title="Press enter to add a task"/>
                     <button type="submit" hidden onClick={() => handleAddTask()} />
                 </form>

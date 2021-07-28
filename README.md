@@ -13,7 +13,7 @@
 📌 Features:
 - Check/uncheck any task
 - Remove any task
-- Responsive
+- Not responsive yet (Soon)
 - Auto-save (Using LocalStorage)
 
 <br><br>
