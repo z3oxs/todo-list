@@ -1,5 +1,6 @@
 body {
-    transition: all ease 0.7s;
+    background-color: rgb(14, 14, 14);
+    transition: all ease 0.5s;
 }
 
 .App {

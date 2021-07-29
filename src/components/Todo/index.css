@@ -1,22 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-.header-dark,
-.header-light {
-    margin: 15px 0 50px 0;
-}
-
-.header-dark svg,
-.header-light svg {
-    cursor: pointer;
-    border-radius: 50%;
-    padding: 7px;
-    transition: all ease 0.4s;
-}
-
-.header-dark svg {
-    color: rgb(184, 184, 184);
-}
-
 .todo-dark input[type='text'],
 .todo-light input[type='text'] {
     border: none;
