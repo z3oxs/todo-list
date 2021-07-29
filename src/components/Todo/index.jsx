@@ -33,7 +33,7 @@ export default () => {
     , [theme]);
 
     useEffect(() => {
-        localStorage.setItem('TodoApp', JSON.stringify(task));
+        localStorage.setItem('TodoTasks', JSON.stringify(task));
         
         document.title = `(${task.filter(i => !i.checked).length}/${task.filter(i => i.checked).length}) Todo`;
     }, [task]);
