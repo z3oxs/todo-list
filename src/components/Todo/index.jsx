@@ -94,7 +94,7 @@ export default function Todo() {
                 <div className={'empty-tasks-' + theme} onClick={() => document.querySelector('#task').focus()}>
                     Looks like you don't have any tasks, try to create one clicking on me!
                 </div>
-            ||
+                ||
                 <>
                     <div className={'task-list-' + theme}>
                         <h1>Todo</h1>

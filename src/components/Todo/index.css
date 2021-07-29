@@ -8,6 +8,9 @@
 .header-dark svg,
 .header-light svg {
     cursor: pointer;
+    border-radius: 50%;
+    padding: 7px;
+    transition: all ease 0.4s;
 }
 
 .header-dark svg {
@@ -175,12 +178,14 @@
     color: rgb(25, 25, 25);
 }
 
-.task-list-dark svg:hover {
+.task-list-dark svg:hover,
+.header-dark svg:hover {
     background-color: rgb(42, 42, 42);
     box-shadow: 0 0 4px 2px rgb(42, 42, 42);
 }
 
-.task-list-light svg:hover {
+.task-list-light svg:hover,
+.header-light svg:hover {
     background-color: rgb(185, 185, 185);
     box-shadow: 0 0 4px 2px rgb(185, 185, 185);
 }
