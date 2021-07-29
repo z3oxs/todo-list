@@ -2,8 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './index.css';
 
 export default () => {
-    const savedTheme = JSON.parse(localStorage.getItem('TodoTheme'));
-    const [theme, setTheme] = useState(savedTheme ? savedTheme.theme === 'dark' ? 'dark' : 'light' : 'light');
+    const [theme, setTheme] = useState(() => {
+        const savedTheme = JSON.parse(localStorage.getItem('TodoTheme'));
+
+        if (savedTheme) {
+            return savedTheme.theme === 'dark' ? 'dark' : 'light';
+
+        } else {
+            return 'light';
+        }
+    });
     
     useEffect(() => localStorage.setItem('TodoTheme', JSON.stringify({ theme })), [theme]);
 
