@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App/';
+import Todo from './pages/Todo';
 
 ReactDOM.render(
-    <App />,
+    <>
+        <div className="App">
+            <center>
+                <Todo />
+            </center>
+        </div>
+    </>,
     document.querySelector('#root')
 );

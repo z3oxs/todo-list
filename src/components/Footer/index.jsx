@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import './index.css';
+import React from 'react';
+import { Container } from './styles';
 
-export default ({ theme }) => {
+export default () => {
     return (
-        <footer className={'footer-' + theme}>
-            Made with 💜 by <a href="https://github.com/z3ox1s" target="_blank">z3ox1s</a>
-        </footer>
+        <Container>
+            <footer className="footer">
+                Made with 💜 by <a href="https://github.com/z3ox1s" target="_blank">z3ox1s</a>
+            </footer>
+        </Container>
     );
 }
